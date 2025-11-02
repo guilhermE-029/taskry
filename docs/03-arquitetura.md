@@ -30,8 +30,7 @@ graph TD
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style C fill:#ccf,stroke:#333,stroke-width:2px
     style D fill:#cfc,stroke:#333,stroke-width:2px
-
-
+```
 
 ## 3.2. Stack Tecnológica
 
