@@ -38,19 +38,22 @@ Lista todas as tarefas no banco de dados, ordenadas da mais recente para a mais 
 
 ---
 
-#### **POST /api/tasks** — Criar Nova Tarefa  
+#### **POST /api/tasks** — Criar Nova Tarefa
 Cria uma nova tarefa. Requer o campo `title`.
 
-| Detalhe       | Valor                                                                 |
-|----------------|----------------------------------------------------------------------|
-| **Método**     | `POST`                                                               |
-| **Corpo Req.** | Objeto JSON com `title`                                              |
-| **Corpo Resp.**| `201 Created` — O objeto **Task** recém-criado.                      |
-| **Erro**       | `400 Bad Request` — Se `title` estiver ausente.                      |
+**Detalhes:**
+- **Método:** POST
+- **Corpo da Requisição:** 
+  - `title` — título da tarefa (obrigatório)
+- **Resposta:** 201 Created — retorna o objeto Task recém-criado
+- **Erro:** 400 Bad Request — se o campo `title` estiver ausente
 
 **Exemplo de Requisição:**
+- title: Configurar o Express
 
-```json
-{
-  "title": "Configurar o Express"
-}
+**Exemplo de Resposta:**
+- id: 1
+- title: Configurar o Express
+- completed: false
+- created_at: 02/11/2025 12:34:56
+

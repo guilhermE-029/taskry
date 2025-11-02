@@ -6,13 +6,33 @@ Este documento define a arquitetura de alto nível, a stack tecnológica e a est
 
 O diagrama abaixo ilustra a relação entre as principais entidades do sistema.
 
-```mermaid
-graph TD
-    A[Usuário Final] -->|1. Acesso HTTP| B(Navegador Web);
-    B -->|2. Requisições API (JSON)| C(Backend Node.js/Express);
-    C -->|3. Comandos SQL| D[SQLite DB - db.sqlite];
-    C -->|4. Serve Conteúdo Estático| B;
-    B -->|5. Renderiza UI| A;
+          ┌─────────────────┐
+          │   Usuário Final │
+          └────────┬────────┘
+                   │ 1. Acesso HTTP
+                   ▼
+          ┌─────────────────┐
+          │  Navegador Web  │
+          └─────┬─────┬─────┘
+                │     │
+ 2. Requisições │     │ 5. Renderiza UI
+    API (JSON)  │     ▼
+                │   ┌─────────────────┐
+                │   │   Usuário Final │
+                │   └─────────────────┘
+                ▼
+          ┌─────────────────────────┐
+          │ Backend Node.js/Express │
+          └─────┬─────────┬────────┘
+                │3. Comandos SQL
+                ▼
+          ┌───────────────┐
+          │ SQLite DB     │
+          │ db.sqlite     │
+          └───────────────┘
+                │4. Serve Conteúdo Estático
+                └─────────────►
+
 
 ## 3.2. Stack Tecnológica
 
