@@ -26,9 +26,9 @@ graph TD
     B -- 5. Renderiza UI --> A
 
     %% Estilos (Opcional, mas melhora a visualização em alguns renderizadores Mermaid)
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#ccf,stroke:#333,stroke-width:2px
+    style A fill:#f9f,stroke:#000000,stroke-width:2px
+    style B fill:#bbf,stroke:#000000,stroke-width:2px
+    style C fill:#ccf,stroke:#000000,stroke-width:2px
     style D fill:#cfc,stroke:#000000,stroke-width:2px
 ```
 
