@@ -46,3 +46,25 @@ npm install
 # Inicie o servidor
 npm start 
 # ou npm run dev (se tiver nodemon instalado)
+
+### 3. Acesso
+
+O servidor será iniciado na **porta 3000**.
+
+| Tipo de Acesso               | URL / Detalhes                                      |
+|------------------------------|-----------------------------------------------------|
+| **Aplicação Web (Frontend)** | [http://localhost:3000](http://localhost:3000) — Acesse pelo navegador no Windows. |
+| **API Root**                 | [http://localhost:3000/api/tasks](http://localhost:3000/api/tasks) |
+
+---
+
+### 🎯 Meta do Sprint 1 (DoD)
+
+A versão **v0.1.0** representa o **MVP totalmente funcional**.
+
+#### Entregáveis:
+
+- ✅ **Backend** com CRUD completo via **Express / SQLite**  
+- ✅ **Frontend** em **HTML / JS / CSS** com interface utilizável  
+- ✅ **Versionamento** com branch `sprint-1` mergeado para `develop` ou `main`  
+- ✅ **Documentação Blueprint** finalizada e incluída no repositório  
