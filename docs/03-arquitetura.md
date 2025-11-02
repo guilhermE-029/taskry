@@ -24,12 +24,6 @@ graph TD
     C -- 3. Comandos SQL --> D
     C -- 4. Serve Conteúdo Estático --> B
     B -- 5. Renderiza UI --> A
-
-    %% Estilos (Opcional, mas melhora a visualização em alguns renderizadores Mermaid)
-    style A fill:#f9f,stroke:#0c0c0c,stroke-width:2px
-    style B fill:#bbf,stroke:#000000,stroke-width:2px
-    style C fill:#ccf,stroke:#000000,stroke-width:2px
-    style D fill:#cfc,stroke:#000000,stroke-width:2px
 ```
 
 ## 3.2. Stack Tecnológica
