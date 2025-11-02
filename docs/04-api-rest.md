@@ -34,26 +34,3 @@ Lista todas as tarefas no banco de dados, ordenadas da mais recente para a mais 
   { "id": 2, "title": "Escrever documentação Blueprint", "done": 0, "created_at": "..." }
 ]
 
-### Endpoints da API REST
-
----
-
-#### **POST /api/tasks** — Criar Nova Tarefa
-Cria uma nova tarefa. Requer o campo `title`.
-
- **Detalhes:** 
-- **Método:** POST
-- **Corpo da Requisição:** 
-  - `title` — título da tarefa (obrigatório)
-- **Resposta:** 201 Created — retorna o objeto Task recém-criado
-- **Erro:** 400 Bad Request — se o campo `title` estiver ausente
-
-**Exemplo de Requisição:**
-- title: Configurar o Express
-
-**Exemplo de Resposta:**
-- id: 1
-- title: Configurar o Express
-- completed: false
-- created_at: 02/11/2025 12:34:56
-
