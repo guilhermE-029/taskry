@@ -32,6 +32,7 @@ graph TD
     style D fill:#cfc,stroke:#333,stroke-width:2px
 
 
+
 ## 3.2. Stack Tecnológica
 
 | Camada | Tecnologia | Detalhes / Justificativa |
