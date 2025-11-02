@@ -9,13 +9,13 @@ O diagrama abaixo ilustra a relação entre as principais entidades do sistema.
           ┌─────────────────┐
           │   Usuário Final │
           └────────┬────────┘
-                   │ 1. Acesso HTTP
+                   │ 1.Acesso HTTP
                    ▼
           ┌─────────────────┐
           │  Navegador Web  │
           └─────┬─────┬─────┘
                 │     │
- 2. Requisições │     │ 5. Renderiza UI
+  2.Requisições │     │ 5.Renderiza UI
     API (JSON)  │     ▼
                 │   ┌─────────────────┐
                 │   │   Usuário Final │
@@ -24,13 +24,13 @@ O diagrama abaixo ilustra a relação entre as principais entidades do sistema.
           ┌─────────────────────────┐
           │ Backend Node.js/Express │
           └─────┬─────────┬────────┘
-                │3. Comandos SQL
+                │3.Comandos SQL
                 ▼
           ┌───────────────┐
           │ SQLite DB     │
           │ db.sqlite     │
           └───────────────┘
-                │4. Serve Conteúdo Estático
+                │4.Serve Conteúdo Estático
                 └─────────────►
 
 

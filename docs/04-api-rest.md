@@ -41,7 +41,7 @@ Lista todas as tarefas no banco de dados, ordenadas da mais recente para a mais 
 #### **POST /api/tasks** — Criar Nova Tarefa
 Cria uma nova tarefa. Requer o campo `title`.
 
-**Detalhes:**
+ **Detalhes:** 
 - **Método:** POST
 - **Corpo da Requisição:** 
   - `title` — título da tarefa (obrigatório)
